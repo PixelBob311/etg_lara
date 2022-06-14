@@ -15,11 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 Route::get('register', function () {
     return view('register');
 })->name('show.register');
 
-Route::post('register', [\App\Http\Controllers\RegisterController::class, 'registerNewUser'])
-    ->name('register');
+Route::post('register', [\App\Http\Controllers\RegisterController::class, 'registerNewUser'])->name('register');

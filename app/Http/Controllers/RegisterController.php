@@ -12,6 +12,8 @@ class RegisterController extends Controller
     {
         $data = $request->validated();
         $data['name'] = 'User';
+        $data['second_name'] = 'User';
+        $data['middle_name'] = 'User';
         $user = User::create($data);
     }
 }
