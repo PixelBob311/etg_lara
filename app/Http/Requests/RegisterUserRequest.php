@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http;
+namespace App\Http\Requests;
 
 class RegisterUserRequest extends \Illuminate\Foundation\Http\FormRequest
 {
